@@ -30,21 +30,36 @@ class Card1 extends StatelessWidget {
         ),
         child: Stack(
           children: [
+            //8
             Text(
               category,
               style: FooderlichTheme.darkTextTheme.bodyText1,
             ),
-            Text(
-              title,
-              style: FooderlichTheme.darkTextTheme.headline5,
+            //9
+            Positioned(
+              top: 20,
+              child: Text(
+                title,
+                style: FooderlichTheme.darkTextTheme.headline5,
+              ),
             ),
-            Text(
-              description,
-              style: FooderlichTheme.darkTextTheme.bodyText1,
+            //10
+            Positioned(
+              bottom: 30,
+              right: 0,
+              child: Text(
+                description,
+                style: FooderlichTheme.darkTextTheme.bodyText1,
+              ),
             ),
-            Text(
-              chef,
-              style: FooderlichTheme.darkTextTheme.bodyText1,
+            //11
+            Positioned(
+              bottom: 10,
+              right: 0,
+              child: Text(
+                chef,
+                style: FooderlichTheme.darkTextTheme.bodyText1,
+              ),
             ),
           ],
         ),
